@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def kalkulacka(request):
+    return render(request,"kal.html", {})
