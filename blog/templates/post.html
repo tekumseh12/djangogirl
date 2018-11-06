@@ -1,0 +1,12 @@
+
+{% extends 'sablona.html' %}
+ 
+{% block content %}
+	{% for post in posts %}
+		<a href="{% url 'post_detail' pk=post.pk %}">{{ post.title}} </a>
+		<p> class="author">{{ post.author}} </p>
+		<div class="text">{{post.text}} </div>
+	{% endfor %}
+{% endblock %}
+
+
